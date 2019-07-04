@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+                android:id="@+id/todayLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+                <TextView
+                        android:id="@+id/todayDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/weather_text_big"
+                        />
+                <ImageView
+                        android:id="@+id/todayIcon"
+                        android:layout_width="@dimen/weather_icon_big"
+                        android:layout_height="@dimen/weather_icon_big"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/weather_background"
+                        android:contentDescription="@string/weather_icon"
+                        />
+                <TextView
+                        android:id="@+id/todayTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/weather_text_big"
+                        />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                />
+    </LinearLayout>
+
+</RelativeLayout>
